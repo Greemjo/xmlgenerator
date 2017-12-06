@@ -1,0 +1,39 @@
+{
+  "name": "ts-angularjs-webpack-starter",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/server/main.ts",
+  "scripts": {
+    "build": "webpack -d -w",
+    "nodemon": "nodemon --watch 'src/server/*.ts' --exec 'ts-node' .",
+    "start": "concurrently \"npm run build\" \"npm run nodemon\""
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "~1.0.0",
+    "angular": "~1.6.0",
+    "angular-ui-bootstrap": "~2.5.0",
+    "bootstrap-css-only": "~3.3.0",
+    "express": "~4.16.0",
+    "pg": "~7.4.0"
+  },
+  "devDependencies": {
+    "@types/angular": "~1.6.0",
+    "@types/express": "~4.0.0",
+    "@types/node": "~8.0.0",
+    "@types/pg": "~7.1.0",
+    "concurrently": "~3.5.0",
+    "css-loader": "~0.28.0",
+    "file-loader": "~1.1.0",
+    "ng-annotate-loader": "~0.6.0",
+    "node-pg-migrate": "~2.14.0",
+    "nodemon": "~1.12.0",
+    "raw-loader": "~0.5.0",
+    "style-loader": "~0.19.0",
+    "ts-loader": "~3.1.0",
+    "ts-node": "~3.3.0",
+    "tslint": "~5.8.0",
+    "typescript": "~2.6.0",
+    "webpack": "~3.8.0",
+    "xmlbuilder": "^9.0.4"
+  }
+}

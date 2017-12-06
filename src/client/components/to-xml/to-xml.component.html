@@ -1,0 +1,16 @@
+<form ng-submit="$ctrl.generateXml($ctrl.object)">
+    <div class="form-group">
+        <label>First</label>
+        <input type="text" class="form-control" placeholder="First" ng-model="$ctrl.object.first">
+    </div>
+    <div class="form-group">
+        <label>Second</label>
+        <input type="text" class="form-control" placeholder="Second" ng-model="$ctrl.object.second">
+    </div>
+    <div class="form-group">
+        <label>Third</label>
+        <input type="text" class="form-control" placeholder="Third" ng-model="$ctrl.object.third">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="generateXml($ctrl.object)">Submit</button>
+</form>
+<button type="submit" class="btn btn-success" ng-click="$ctrl.download()">Download</button>
